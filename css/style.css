@@ -11,6 +11,10 @@
 header{
     background-color: rgb(255, 123, 0);
     height: 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
 }
 header nav{
     width: 70%;
@@ -66,6 +70,24 @@ header i{
 
 .card-singola-image{
     position: relative;
+}
+.not-hover{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.contenitore-foto{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .cards-singola-price{
