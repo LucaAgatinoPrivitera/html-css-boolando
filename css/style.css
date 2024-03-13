@@ -73,6 +73,11 @@ header i{
 }
 .card-singola-image{
     position: relative;
+    width: 100%;
+}
+.contenitore-foto{
+    width: 100%;
+    height: 100%;
 }
 
 .not-hover{
@@ -87,12 +92,6 @@ header i{
     z-index: 2;
 }
 
-.contenitore-foto{
-    position: relative;
-    left: 0;
-    width: 100%;
-    height: 100;
-}
 
 .cards-singola-price{
     color: red;
