@@ -199,18 +199,8 @@ div.footer-container{
     left: 0;
 }
 
-#base:hover{
-    z-index: -3;
-    display: none;
-}
-#hover:hover{
-    display: block;
-    z-index: 1;
-}
 
-#hover:not(:hover){
-    display: none;
-}
-#base:not(:hover){
-    display: block;
+#fixf{
+    position: static;
+
 }

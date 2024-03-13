@@ -84,12 +84,15 @@ header i{
     position: absolute;
     top: 0;
     z-index: 1;
+    display: block;
 }
-
+.not-hover:hover{
+    opacity: 0;
+}
 .hover{
     position: absolute;
     top: 0;
-    z-index: 2;
+    z-index: 0;
 }
 
 
@@ -107,6 +110,7 @@ div.info-articolo i{
     position: absolute;
     top: 20px;
     right: 0;
+    z-index: 8;
 }
 div.info-articolo i:hover{
     color: red;
@@ -115,17 +119,20 @@ div.info-articolo i:hover{
     padding: 5px 10px;
     background-color: red;
     color: white;
+    z-index: 8;
 }
 .cards-singolacard-old-price-eco{
     padding: 5px 10px;
     background-color: green;
     color: white;
+    z-index: 8;
 }
 .info-articolo-prezzo_materiale{
     display: inline;
     position: absolute;
     bottom: 20px;
     left: 0;
+    z-index: 8;
 }
 
 main img{
@@ -150,4 +157,11 @@ div.footer-container{
     height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+#opac0{
+    border: 1px solid red;
+    opacity: 0;
+    position: static;
+    z-index: 100;
 }
