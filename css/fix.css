@@ -16,6 +16,10 @@ header{
     top: 0;
     z-index: 20;
 }
+body{
+    background-color: rgb(150, 150, 150);
+}
+
 header nav{
     width: 70%;
     height: 100%;
@@ -108,9 +112,6 @@ div.info-articolo i{
     top: 20px;
     right: 0;
 }
-div.info-articolo i:hover{
-    color: red;
-}
 .cards-singolacard-old-price-sconto{
     padding: 5px 10px;
     background-color: red;
@@ -150,4 +151,66 @@ div.footer-container{
     height: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+
+.containerfix{
+    width: 70%;
+    margin: auto;
+}
+.cardsfix{
+
+}
+
+.card-singola{
+    width: 33%;
+    position: relative;
+}
+.card-singola-image-fix img{
+
+    width: 100%;
+    top: 0;
+    display: no;
+}
+#base{
+    z-index: -1;
+    display: none;
+}
+#hover{
+    z-index: -2;
+}
+
+.info-articolofix i{
+    padding: 20px 15px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.info-articolofix i:hover{
+    color: red;
+}
+
+.info-articolo-prezzo_materiale-fix{
+    display: inline;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+#base:hover{
+    z-index: -3;
+    display: none;
+}
+#hover:hover{
+    display: block;
+    z-index: 1;
+}
+
+#hover:not(:hover){
+    display: none;
+}
+#base:not(:hover){
+    display: block;
 }
